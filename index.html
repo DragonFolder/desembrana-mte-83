@@ -38,8 +38,21 @@
                         <span class="cart-badge">0</span>
                     </a>
                 </div>
+                <button class="btn p-0 border-0 d-md-none material-symbols-outlined text-primary-c" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">menu</button>
             </div>
         </nav>
+        <!-- Mobile menu (revealed by the hamburger below md) -->
+        <div class="collapse d-md-none" id="mobileMenu">
+            <div class="px-margin py-3 d-flex flex-column gap-3 mobile-menu">
+                <a class="nav-link-ar" href="/shop">Shop</a>
+                <a class="nav-link-ar" href="/about">About</a>
+                <a class="nav-link-ar" href="#footer">Contact</a>
+                <form class="d-flex align-items-center px-3 py-2 search-pill" action="/shop" method="get">
+                    <span class="material-symbols-outlined text-outline icon-18">search</span>
+                    <input class="font-label-md ms-2" name="q" placeholder="Search origins..." type="text" />
+                </form>
+            </div>
+        </div>
     </header>
     <main>
         <!-- Hero Section -->

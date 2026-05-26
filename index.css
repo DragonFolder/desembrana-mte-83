@@ -82,7 +82,8 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 12px; line-height: 16px; font-weight: 500;
 }
-@media (min-width: 768px) {
+/* Full size on desktop (48px base); step down to 36px on mobile */
+@media (max-width: 767.98px) {
     .font-display-lg.display-mobile-md {
         font-size: 36px; line-height: 44px; letter-spacing: -0.01em;
     }
@@ -298,6 +299,11 @@ body {
 .footer-link.underline:hover { text-decoration: underline; text-decoration-color: var(--secondary); }
 .social-link { color: var(--secondary); transition: color .2s ease; font-size: 1.25rem; line-height: 1; }
 .social-link:hover { color: var(--primary); }
+
+/* ---- Mobile menu (collapse panel shown under the navbar on small screens) ---- */
+.mobile-menu { border-top: 1px solid var(--outline-variant); }
+.mobile-menu .search-pill { width: 100%; }
+.mobile-menu .search-pill input { width: 100%; flex: 1 1 auto; }
 
 .material-symbols-outlined { vertical-align: middle; }
 .uppercase-wide { text-transform: uppercase; letter-spacing: 0.1em; }
