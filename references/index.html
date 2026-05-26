@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Artisan Roast | Single-Origin Precision</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- TopNavBar -->
+    <header id="top-nav" class="w-100">
+        <nav class="d-flex justify-content-between align-items-center w-100 px-margin container-max" style="height: 80px;">
+            <div class="d-flex align-items-center gap-5">
+                <a class="font-headline-sm fw-bold text-primary-c text-decoration-none" href="#">Artisan Roast</a>
+                <div class="d-none d-md-flex gap-4 align-items-center">
+                    <a class="nav-link-ar active" href="#">Shop</a>
+                    <a class="nav-link-ar" href="#">Roastery</a>
+                    <a class="nav-link-ar" href="#">Brew Guides</a>
+                    <a class="nav-link-ar" href="#">Subscription</a>
+                    <a class="nav-link-ar" href="#">Journal</a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <div class="d-none d-md-flex align-items-center px-3 py-2 search-pill">
+                    <span class="material-symbols-outlined text-outline" style="font-size: 18px;">search</span>
+                    <input class="font-label-md ms-2" placeholder="Search origins..." type="text" />
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn p-0 border-0 material-symbols-outlined text-primary-c">person</button>
+                    <button class="btn p-0 border-0 position-relative d-flex align-items-center gap-2 font-label-md text-primary-c">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <span class="d-none d-sm-inline">Cart</span>
+                        <span class="cart-badge">0</span>
+                    </button>
+                    <button class="btn p-0 border-0 d-md-none material-symbols-outlined">menu</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-img">
+                <img alt="Coffee Roastery Atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9B3fvVZPAv3WPWAV8CSkGexudeMk5f4oUuNcrcPArW4PYq5jHHHIWM8BbTLXe_hZ6lArNgfVth8HNbKLV_nZXQKuA1TSKONjdQAlIO9nfNgLwZS4VHg2HJM59vRIBLMQjK_rbmWMakWb2kJetBfEf_NmP8nfIqNH2DeZ-unkI6iOUwraEkng7-u-DM0LEQwf3xWtJMm858c8M-5rid1XrSr4DuKaAaQ8jpjLyfgkx1dyck6PsSyWUVgrKv6IV_Vtp0AEwvTCyjpI" />
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="position-relative px-margin container-max w-100" style="z-index: 10;">
+                <div style="max-width: 42rem;" class="d-flex flex-column gap-4">
+                    <span class="badge-pill align-self-start px-3 py-1 font-label-sm">Ethically Sourced &amp; Artfully Roasted</span>
+                    <h1 class="font-display-lg display-mobile-md text-white hero-shadow mb-0">Discover the Soul of the Bean</h1>
+                    <p class="font-body-lg text-surface-low mb-0" style="max-width: 32rem;">
+                        From the high-altitude hills of Ethiopia to the volcanic soils of Guatemala, we source only the most exceptional single-origin lots. Every roast is a tribute to its origin.
+                    </p>
+                    <div class="pt-2 d-flex gap-3">
+                        <button class="btn-ar-light px-4 py-3 font-label-md">Shop All Beans</button>
+                        <button class="btn-ar-outline-light px-4 py-3 font-label-md">Our Process</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Categories -->
+        <section class="py-5 my-5 bg-background px-margin container-max">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h2 class="font-headline-md text-primary-c mb-0">Roast Profiles</h2>
+                    <p class="text-on-surface-variant font-body-md mt-2 mb-0">Find the intensity that matches your ritual.</p>
+                </div>
+                <div class="d-flex gap-3">
+                    <button class="btn-circle"><span class="material-symbols-outlined">chevron_left</span></button>
+                    <button class="btn-circle"><span class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+            </div>
+            <div class="row gx-gutter g-4">
+                <!-- Light Roast -->
+                <div class="col-12 col-md-4">
+                    <div class="cat-card">
+                        <div class="cat-img">
+                            <img data-alt="A macro close-up of light brown roasted coffee beans with a smooth matte texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk3WhgfoTacaNLLWNoKc1xkfhGKjSRDsdYipBLEw2sZ21Afjqzm85VCxsOcVmZPm2BPyoH4pQq8HTHY_zhs2KBOVaKVtc7ZaaIjwk5U4Xb9Q8kkbtaPlIrYgf2OIOlSDnybRRauLVmNumc1G4Qz89o2odGjzVi6MHDrE6WrekTfAhXGvaMpuLDDcRWmjrG2oQLDfC7eyaV3UYexIPY4kFBgn818kLWKuvysW-x5Wm4WcG_qyz0GXTb-SmgIalB-biJyJnv79_4aBQ" />
+                        </div>
+                        <div class="cat-overlay"></div>
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100">
+                            <span class="text-tertiary-fixed-dim font-label-sm uppercase-wide d-block mb-2">Vibrant &amp; Citrusy</span>
+                            <h3 class="text-white font-headline-sm mb-3">Light Roast</h3>
+                            <div class="cat-underline"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Medium Roast -->
+                <div class="col-12 col-md-4">
+                    <div class="cat-card">
+                        <div class="cat-img">
+                            <img data-alt="Medium-dark coffee beans piled elegantly in a ceramic bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD_P8gh97AAxarN3d9toJEeWZDPbEQXrQgYGo0Q1UfDtmBTsmW0Kb-v16UvnKWQldHxo_0cK8jaZLLqLJwyvQ2MiyQ9rmgaKSx9qnI5YHaZJ1YoVY2avubAlC5GHyJK5e2dGVpqesBwkNbJGW8HZIVUhSOrnNzSUc9Qvge-N4B-WlVmmKSHBlYtSk-_a8rlljpiNjnvZ1x3MIAEYkl5zpnne8iGm_OYwxHb5DIuc9p7ye9CmqMeTEySv8B2iGw048TFFHPldAMdPk" />
+                        </div>
+                        <div class="cat-overlay"></div>
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100">
+                            <span class="text-tertiary-fixed-dim font-label-sm uppercase-wide d-block mb-2">Balanced &amp; Sweet</span>
+                            <h3 class="text-white font-headline-sm mb-3">Medium Roast</h3>
+                            <div class="cat-underline"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dark Roast -->
+                <div class="col-12 col-md-4">
+                    <div class="cat-card">
+                        <div class="cat-img">
+                            <img data-alt="Deep dark, oily coffee beans in a professional metal scoop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdHsJzmvbqzgmbQkI4CRVgrtsp7KVQOT7C4G30ZIitKweMLDpJjiK5fop2FeKbzRUUgXJv0jP0C18ppAVICP0qDXw_-FQVqMK4WvufW43ADiRyKEhYTnWNNU2gXEOa4hqotMnX40bnXJFifWbwZk6YTmqMlkDFg9C7_aVjiYeEbxJip-_SS4r__tHC-KjXF1qk102ZTuKBgj9Dl22C4ObyiEwof56kA4RBHw4zdP_YXv-YGi6iBpdKFq8sSCrybfseTHfXPSLhy3s" />
+                        </div>
+                        <div class="cat-overlay"></div>
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100">
+                            <span class="text-tertiary-fixed-dim font-label-sm uppercase-wide d-block mb-2">Bold &amp; Smokey</span>
+                            <h3 class="text-white font-headline-sm mb-3">Dark Roast</h3>
+                            <div class="cat-underline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 d-flex justify-content-center gap-2 align-items-center">
+                <div class="dot-active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section>
+        <!-- Featured Products Section -->
+        <section class="py-5 bg-surface-container-low">
+            <div class="px-margin container-max py-4">
+                <div class="text-center mb-5">
+                    <h2 class="font-headline-md text-primary-c">Our Single Origin Collection</h2>
+                    <div class="mx-auto my-3" style="width: 48px; height: 4px; background: var(--primary);"></div>
+                    <p class="mx-auto text-on-surface-variant font-body-md" style="max-width: 36rem;">Sourced from the world's most renowned micro-lots and roasted to perfection in small batches.</p>
+                </div>
+                <div class="row gx-gutter g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img alt="Ethiopia Yirgacheffe Product" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_DQYl7SexYiYaQsKlzCdsFwl-ERHVcZlZ_Rbc5p_dy8bPaToHLitLXaoJ5z0rSqnUBwv0Uq4CUQw7rfhnv-0iMRR6mMFjXifKlz3WGh3TQHrwIb60sLloXS896XXXGcduuqFM7Wil6fD1kXju8vVydJh3pEnQADiLT9-QVjK0fQ_4ZaVA_l_L1d5dMHiSIU3i6IjNtUQi3Qb6wWb_64lKqlakFUSJckk4-jdHLo3t_g5BUuI9maLKSztLIfg1YjB8Nae-PV9vfx8" />
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm badge-tag px-3 py-1">New Release</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="font-headline-sm text-primary-c mb-0" style="font-size: 20px;">Ethiopia Yirgacheffe</h3>
+                                    <span class="font-label-md text-secondary-c">₱650.00</span>
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <span class="chip font-label-md">Jasmine</span>
+                                    <span class="chip font-label-md">Lemon</span>
+                                </div>
+                                <p class="small text-on-surface-variant mb-4 flex-grow-1">Floral notes with high acidity and a tea-like body.</p>
+                                <button class="btn-ar-primary w-100 py-2 font-label-md">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img alt="Colombia Huila Product" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL8Di_CI2KbG7purr6URE1wYneBWXl_7WylaL3NNMtMIC8QLwyj23uCRKzt4apTYNTDCC23ik0xhLnU-MkTFVaYV_hFxbaUvUj-AAZFQu9q2GpUnV5oFv3YI8kvuBXn6aRmIwI2hLiVsOJMay9mdNQDgk1mkxECbTktrTtoQCCQsrPGrEaVEANIUml2eRE5i6_4Q91PvMMKVM4bXuXs-w6rGNGAqpZ5kF4kGptj1IGx8ilwrR-pZei-Por-ikSTVy43pb5C1ePUVc" />
+                            </div>
+                            <div class="p-4 d-flex flex-column flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="font-headline-sm text-primary-c mb-0" style="font-size: 20px;">Colombia Huila</h3>
+                                    <span class="font-label-md text-secondary-c">₱580.00</span>
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <span class="chip font-label-md">Caramel</span>
+                                    <span class="chip font-label-md">Nutty</span>
+                                </div>
+                                <p class="small text-on-surface-variant mb-4 flex-grow-1">Balanced sweetness with rich caramel and hazelnut undertones.</p>
+                                <button class="btn-ar-primary w-100 py-2 font-label-md">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img alt="Guatemala Antigua Product" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNtoGoBLzpn3lhRlwdnvjkrL53VdRWokuEe2ScQGnmf6KObchETC_B8staJHA2UEMO8V98hhTo3hVw5Pi0vB0NR0opY6QBVo3CkxCBteDY9wZRZNj52hcS6cIn4fSNdMzd1AUkUmmLto-QT9DNaB6PIHbr21vZVuQuzyAEAVMNlLlmkXXi9DlUHEkVpInaeZ7D0YyDqLlDAV0AaA-WtdxlLZrPvBS5SnEGJZI4vzHRim9wwGjkMO4GgeFOwPf1l0OeIJXso7iuFKA" />
+                            </div>
+                            <div class="p-4 d-flex flex-column flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="font-headline-sm text-primary-c mb-0" style="font-size: 20px;">Guatemala Antigua</h3>
+                                    <span class="font-label-md text-secondary-c">₱550.00</span>
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <span class="chip font-label-md">Chocolate</span>
+                                    <span class="chip font-label-md">Spice</span>
+                                </div>
+                                <p class="small text-on-surface-variant mb-4 flex-grow-1">Complex cocoa notes with a subtle, spicy finish.</p>
+                                <button class="btn-ar-primary w-100 py-2 font-label-md">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img alt="Sumatra Mandheling Product" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTptbEZqf6fDXsXOY1TBDDwl811xadZG1FfDLO3AV7-Fku35hqvPJA5INPEnf7ycIuqaa0V3_TSXEGuzGPSFVdhHB1LGoiHjh_bIq8w8__qIA8DYCvbzLCud94DsRUAWABO_kLwqRlKw8cbVc1Rug9o-GAAGRSMK0aaoySyLqMBRgqwu5uRYi6OrkmXmUGPj7vkDngoirwiL6C1vQ-7_gEgcHJm3tQVl6hUqvI4uWGwdBEFGlXhe2ZHDV1wI6rRateQEoB-4diUBY" />
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="bg-primary-c text-on-primary font-label-sm badge-tag px-3 py-1">Editor's Pick</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="font-headline-sm text-primary-c mb-0" style="font-size: 20px;">Sumatra Mandheling</h3>
+                                    <span class="font-label-md text-secondary-c">₱620.00</span>
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <span class="chip font-label-md">Earthy</span>
+                                    <span class="chip font-label-md">Tobacco</span>
+                                </div>
+                                <p class="small text-on-surface-variant mb-4 flex-grow-1">A low-acidity cup with intense earthiness and heavy body.</p>
+                                <button class="btn-ar-primary w-100 py-2 font-label-md">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+                    <a class="link-underline-ar font-label-md" href="#">
+                        View Entire Collection
+                        <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter / Social Proof Section -->
+        <section class="newsletter py-5 text-center px-margin">
+            <div class="newsletter-pattern">
+                <div class="grid">
+                    <div class="dot-circle"></div>
+                    <div class="dot-circle" style="transform: translateY(80px);"></div>
+                    <div class="dot-circle" style="transform: translateY(-40px);"></div>
+                    <div class="dot-circle" style="transform: translateY(128px);"></div>
+                    <div class="dot-circle"></div>
+                    <div class="dot-circle" style="transform: translateY(48px);"></div>
+                </div>
+            </div>
+            <div class="position-relative mx-auto py-4" style="max-width: 42rem; z-index: 10;">
+                <h2 class="font-headline-md mb-4">Join the Roast Club</h2>
+                <p class="font-body-lg text-on-primary-container">Subscribe to receive first access to limited-edition micro-lots, brewing tips, and ₱150 off your first order.</p>
+                <form class="d-flex flex-column flex-sm-row gap-3 justify-content-center mt-4">
+                    <input class="px-3 py-3" placeholder="Enter your email" type="email" style="max-width: 20rem; width: 100%;" />
+                    <button class="btn-ar-light fw-bold px-4 py-3 font-label-md" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer w-100 py-5" id="footer">
+        <div class="row gx-gutter g-4 px-margin container-max">
+            <div class="col-12 col-md-3">
+                <a class="font-headline-sm text-primary-c d-block fw-bold text-decoration-none" href="#">Artisan Roast</a>
+                <p class="text-on-surface-variant font-body-md small mt-3">
+                    Crafting extraordinary coffee experiences through direct relationships and meticulous roasting since 2012.
+                </p>
+                <div class="d-flex gap-3">
+                    <a class="social-link" href="#"><span class="material-symbols-outlined">public</span></a>
+                    <a class="social-link" href="#"><span class="material-symbols-outlined">language</span></a>
+                    <a class="social-link" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4 class="font-label-md text-primary-c uppercase-wide">The Shop</h4>
+                <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                    <li><a class="footer-link underline" href="#">All Beans</a></li>
+                    <li><a class="footer-link underline" href="#">Subscriptions</a></li>
+                    <li><a class="footer-link underline" href="#">Equipment</a></li>
+                    <li><a class="footer-link underline" href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4 class="font-label-md text-primary-c uppercase-wide">Information</h4>
+                <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                    <li><a class="footer-link" href="#">Sustainability</a></li>
+                    <li><a class="footer-link" href="#">Shipping &amp; Returns</a></li>
+                    <li><a class="footer-link" href="#">Wholesale</a></li>
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                    <li><a class="footer-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4 class="font-label-md text-primary-c uppercase-wide">Our Lab</h4>
+                <p class="text-on-surface-variant font-body-md small mt-3">
+                    123 Roastery Lane<br />
+                    Precision District<br />
+                    London, E1 6AN
+                </p>
+                <div class="pt-2">
+                    <p class="text-on-surface-variant" style="font-size: 12px; opacity: .6;">© 2024 Artisan Roast. Crafted with Precision.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Scroll interaction for the TopAppBar
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('top-nav');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Add to cart micro-interaction
+    document.querySelectorAll('button').forEach(btn => {
+        if (btn.innerText.trim() === 'Add to Cart') {
+            btn.addEventListener('click', () => {
+                const originalText = btn.innerText;
+                btn.innerText = 'Added!';
+                btn.style.backgroundColor = 'var(--secondary)';
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = '';
+                }, 2000);
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

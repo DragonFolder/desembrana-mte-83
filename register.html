@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Register | Artisan Roast</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- TopNavBar -->
+    <header id="top-nav" class="w-100">
+        <nav class="d-flex justify-content-between align-items-center w-100 px-margin container-max nav-height">
+            <div class="d-flex align-items-center gap-5">
+                <a class="font-headline-sm fw-bold text-primary-c text-decoration-none" href="index.html">Artisan Roast</a>
+                <div class="d-none d-md-flex gap-4 align-items-center">
+                    <a class="nav-link-ar" href="/shop">Shop</a>
+                    <a class="nav-link-ar" href="/about">About</a>
+                    <a class="nav-link-ar" href="index.html#footer">Contact</a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <form class="d-none d-md-flex align-items-center px-3 py-2 search-pill" action="/shop" method="get">
+                    <span class="material-symbols-outlined text-outline icon-18">search</span>
+                    <input class="font-label-md ms-2" name="q" placeholder="Search origins..." type="text" />
+                </form>
+                <div class="d-flex align-items-center gap-3">
+                    <a class="btn p-0 border-0 material-symbols-outlined text-primary-c text-decoration-none" href="login.html" aria-label="Account">person</a>
+                    <a class="btn p-0 border-0 position-relative d-flex align-items-center gap-2 font-label-md text-primary-c text-decoration-none" href="/cart">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <span class="d-none d-sm-inline">Cart</span>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-wrap px-margin">
+            <div class="auth-card">
+                <h1 class="font-headline-md text-primary-c mb-2">Create your account</h1>
+                <!-- <div class="auth-divider"></div> -->
+                <p class="text-on-surface-variant font-body-md mb-4">Join Artisan Roast and start your single-origin journey.</p>
+
+                <form class="d-flex flex-column gap-3" action="/api/auth/register" method="post">
+                    <div class="ar-field">
+                        <label class="ar-label" for="name">Full name</label>
+                        <input class="ar-input" id="name" name="name" type="text" placeholder="Juan Dela Cruz" required />
+                    </div>
+                    <div class="ar-field">
+                        <label class="ar-label" for="email">Email</label>
+                        <input class="ar-input" id="email" name="email" type="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="ar-field">
+                        <label class="ar-label" for="password">Password</label>
+                        <input class="ar-input" id="password" name="password" type="password" placeholder="At least 8 characters" minlength="8" required />
+                    </div>
+                    <div class="ar-field">
+                        <label class="ar-label" for="confirm">Confirm password</label>
+                        <input class="ar-input" id="confirm" name="confirm" type="password" placeholder="Re-enter your password" minlength="8" required />
+                    </div>
+                    <button class="btn-ar-primary w-100 py-3 font-label-md mt-2" type="submit">Create Account</button>
+                </form>
+
+                <p class="text-on-surface-variant font-body-md text-center mt-4 mb-0">
+                    Already have an account?
+                    <a class="auth-alt-link" href="login.html">Sign in</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer w-100 py-5" id="footer">
+        <div class="row gx-gutter g-4 px-margin container-max">
+            <div class="col-12 col-md-3">
+                <a class="font-headline-sm text-primary-c d-block fw-bold text-decoration-none" href="index.html">Artisan Roast</a>
+                <p class="text-on-surface-variant font-body-md small mt-3">
+                    Crafting extraordinary coffee experiences through direct relationships and meticulous roasting since 2012.
+                </p>
+                <div class="d-flex gap-3">
+                    <a class="social-link" href="https://www.instagram.com/artisanroast" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a class="social-link" href="https://www.facebook.com/artisanroast" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a class="social-link" href="mailto:hello@artisanroast.coffee" aria-label="Email us"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4 class="font-label-md text-primary-c uppercase-wide">The Shop</h4>
+                <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                    <li><a class="footer-link underline" href="/shop">All Beans</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4 class="font-label-md text-primary-c uppercase-wide">Account</h4>
+                <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                    <li><a class="footer-link" href="login.html">Login</a></li>
+                    <li><a class="footer-link" href="register.html">Register</a></li>
+                    <li><a class="footer-link" href="/cart">Cart</a></li>
+                    <li><a class="footer-link" href="/account/orders">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4 class="font-label-md text-primary-c uppercase-wide">Our Lab</h4>
+                <p class="text-on-surface-variant font-body-md small mt-3">
+                    123 Roastery Lane<br />
+                    Precision District<br />
+                    London, E1 6AN
+                </p>
+                <div class="pt-2">
+                    <p class="text-on-surface-variant copyright">© 2024 Artisan Roast. Crafted with Precision.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Scroll interaction for the TopAppBar
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('top-nav');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    </script>
+</body>
+
+</html>
